@@ -1,0 +1,137 @@
+* {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h1 {
+    color: red;
+}
+
+.paragrafo{
+    font-family: 'Montserrat', sans-serif;font-size: 16px;
+}
+
+#custom{
+    font-family: 'Montserrat', sans-serif;font-size: 10px;
+}
+
+#kekw{
+    font-weight: bold;
+}
+
+p[class$="test"] {
+    background: royalblue;
+    color: white;
+}
+
+a.hightlight:hover{
+    color:maroon;
+}
+
+p.paragrafo:first-letter {
+    color: #ff0000;
+    font-size: xx-large;
+  }
+
+section h4 {
+    color: royalblue;
+}
+
+h3 {
+    color: royalblue;
+    font-weight: 900;
+}
+
+h3 + p {
+   font-family: 'Courier New', Courier, monospace;
+}
+
+section > h3 {
+    color: royalblue;
+    font-weight: 900;
+} 
+
+a:link {
+    color: royalblue;
+}
+  
+a:visited {
+    color: red;
+}
+  
+
+a:hover {
+    color: darkblue;
+}
+  
+
+a:active {
+    color: yellow;
+}
+
+footer::before {
+    content: "made by:";
+    font-size: xx-small;
+    font-weight: bold;
+    color: blue;
+}
+
+footer::after {
+    content: "Faroe Islands, Torhsavn";
+    font-size: xx-small;
+    font-weight: bold;
+    color: red;
+}
+
+body{
+    background-image: url("images/background.png");
+    background-repeat: no-repeat;
+    background-color: #ffffff;
+    background-size: cover;
+}
+
+pre:hover{
+    background-color: royalblue;
+    color: white;
+}
+
+p.dope:hover{
+    background-color: maroon;
+    color: white;
+}
+
+tr.par{
+    background-color: royalblue;
+    color: white;
+}
+
+tr.impar{
+    background-color: red;
+    color: white;
+}
+
+th{
+    color: black;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+[target="foto"]{
+    height: initial;
+    width: initial;
+}
+
+p.exe9::first-letter{
+    color: royalblue;
+    font-weight: bold;
+}
+
+p.exe9::first-line{
+    color: maroon;
+}
+
+[type="hidden"]{
+    content: "lab 4";
+}
+
+
+

@@ -5,40 +5,59 @@
         <meta name="keywords" content="Faroe Islands">
         <title>Tórshavn</title>
         <link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico"/>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+        <link rel="stylesheet" href="estilos.css">
     </head>
     <body>
+        <main>
+            <header>
         <h1>Tórshavn</h1>
+        <figure>
         <a><img src="images/torshavn.PNG" alt="torshavn" style="width:300px;height:150px;"></a>
+        <figcaption id="custom">cidade de torshavn</figcaption>
+        </figure>
         <br>
+            </header>
 
-        <p>
-        <a href="index.html">Introdução</a>
+        <nav>
+        <a href="index.html"><i class="material-icons">subdirectory_arrow_right</i>Introdução</a>
          <b> | </b> 
-        <a href="local.html">Localizacao</a>
+        <a href="local.html"><i class="material-icons">subdirectory_arrow_right</i>Localizacao</a>
         <b> | </b> 
-        <b><a href="multimedia.html">Multimédia</a></b>
+        <b><a href="multimedia.html"><i class="material-icons">subdirectory_arrow_right</i>Multimédia</a></b>
         <b> | </b> 
-        <a href="info.html">Informações</a>
+        <a href="info.html"><i class="material-icons">subdirectory_arrow_right</i>Informações</a>
         <b> | </b> 
-        <a href="quizz.html">Quizz</a>
+        <a href="quizz.html"><i class="material-icons">subdirectory_arrow_right</i>Quizz</a>
         <b> | </b> 
-        <a href="comentarios.html">Comentários</a>
+        <a href="comentarios.html"><i class="material-icons">subdirectory_arrow_right</i>Comentários</a>
         <b> | </b> 
-        <a href="../index.html">Localizacao Home (indice geral dos laboratórios)</a>
-        </p>
+        <a href="html5-css.html"><i class="material-icons">subdirectory_arrow_right</i>HTML5</a>
+        <b> | </b>
+        <a href="../index.html"><i class="material-icons">home</i>Localizacao Home (indice geral dos laboratórios)</a>
+        </nav>
         
+    <section>
         <h3>Multimédia</h3>
         <p>Dois lugares emblemáticos de Tórshavn, são a catedral de tórshavn e o estádio nacional(Tórsvøllur)</p>
     
+        <figure>
         <picture>
             <a href="images/catedral_grande.PNG" target="yikes"><img src="images/catedral_pequeno.PNG" alt="Tórshavn Cathedral" style="width: 100px;"></a>
             <caption>Catedral de Tórshavn</caption>  
         </picture>
+        <figcaption>catedral de torshavn</figcaption>
+        </figure>
 
+        <figure>
         <picture>
             <a href="images/stadium_grande.PNG" target="yikes"><img src="images/stadium_grande.PNG" alt="Tórsvøllur" style="width: 100px;"></a>
             <caption>Tórsvøllur(estádio nacional)</caption>  
         </picture>
+        <details>
+        <figcaption>estadio de torshavn</figcaption>
+        </details>
+        </figure>
         <br>
         <br>
         <iframe src="images/stadium_grande.PNG" width="800" height="500" frameborder="0" name="yikes"></iframe>
@@ -46,7 +65,7 @@
         <br>
         <iframe width="560" height="315" src="https://www.youtube.com/embed/LzGxqJeXX-w" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-        <p style="text-align:center;" style="font-size:70px"><b>Empty Stairs</b></p>
+        <p style="text-align:center;" style="font-size:70px" class="dope"><b>Empty Stairs</b></p>
         <pre style="text-align:center;">       
                 Jóanes Nielsen
 
@@ -60,8 +79,8 @@
                 Empty stairs</i>
             </pre>
             <br>
-        <p style="text-align:center;" style="font-size:70px"><b>Tóm Trappa</b></p>
-        <pre style="text-align:center;"> 
+        <p style="text-align:center;" style="font-size:70px" class="dope"><b>Tóm Trappa</b></p>
+        <pre style="text-align:center;" class="poema"> 
                 Jóanes Nielsen
 
                 <i>sigi jørðin
@@ -98,10 +117,11 @@
             <rect opacity="0.1"  x="141" y="102" rx="10" ry="10" width="60" height="67" />
             </a>
             </svg>
+        </section>
 
-
-
+        <section>
             <h4>Menu</h4>
+            <figure>
             <svg width="700" height="350">
                 <image href="images/menu.PNG" width="100%" height="100%"></image>
                 <a href="index.html">
@@ -140,7 +160,14 @@
                     </rect>
                 </a>      
             </svg>
+            <details>
+            <figcaption>wordcloud do menu</figcaption>
+            </details>
+            </figure>
+        </section>
 
-            
+        <footer><p class="test">Tomás Neto a21903361 ULHT 2021</p></footer>
+    
+        </main>
     </body>
 </html>

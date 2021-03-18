@@ -5,41 +5,54 @@
         <meta name="keywords" content="Faroe Islands">
         <title>Tórshavn</title>
         <link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico"/>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+        <link rel="stylesheet" href="estilos.css">
     </head>
     <body>
+        <main>
+            <header>
         <h1>Tórshavn</h1>
+        <figure>
         <a><img src="images/torshavn.PNG" alt="torshavn" style="width:300px;height:150px;"></a>
+        <details>
+        <figcaption id="custom">cidade de torshavn</figcaption>
+        </details>
+        </figure>
         <br>
+            </header>
         
-        <p>
-        <a href="index.html">Introdução</a>
+        <nav>
+        <a href="index.html"><i class="material-icons">subdirectory_arrow_right</i>Introdução</a>
         <b> | </b> 
-        <a href="local.html">Localizacao</a>
+        <a href="local.html"><i class="material-icons">subdirectory_arrow_right</i>Localizacao</a>
         <b> | </b> 
-        <a href="multimedia.html">Multimédia</a>
+        <a href="multimedia.html"><i class="material-icons">subdirectory_arrow_right</i>Multimédia</a>
         <b> | </b> 
-        <a href="info.html">Informações</a>
+        <a href="info.html"><i class="material-icons">subdirectory_arrow_right</i>Informações</a>
         <b> | </b> 
-        <a href="quizz.html">Quizz</a>
+        <a href="quizz.html"><i class="material-icons">subdirectory_arrow_right</i>Quizz</a>
         <b> | </b> 
-        <b><a href="comentarios.html">Comentários</a></b>
+        <b><a href="comentarios.html"><i class="material-icons">subdirectory_arrow_right</i>Comentários</a></b>
         <b> | </b> 
-        <a href="../index.html">Localizacao Home (indice geral dos laboratórios)</a>
-        </p>
+        <a href="html5-css.html"><i class="material-icons">subdirectory_arrow_right</i>HTML5</a>
+        <b> | </b>
+        <a href="../index.html"><i class="material-icons">home</i>Localizacao Home (indice geral dos laboratórios)</a>
+        </nav>
 
+        <section>
         <h3>Comentários</h3>
         <form method="post" action="tomasneto2000@gmail.com">
             <fieldset>
                 <legend>Opiniões</legend>
                 <br>
                 <form method="get">
-                    <label for="clareza">Clareza: (entre 0 e 100)</label>
+                    <label for="clareza" id="kekw">Clareza: (entre 0 e 100)</label>
                     <input type="range" id="vol" name="cla" min="0" max="100" oninput="clareza.value = parseInt(cla.value)">
                     <output name="clareza" for="cla">50</output>
                 </form>
                 <br><br>
 
-                <label for="rigor">Rigor (número de erros)</label>
+                <label for="rigor" id="kekw">Rigor (número de erros)</label>
                 <br>
                 <form>
                     <input type="radio" id="muitos" name="rigor" value="muitos">
@@ -53,7 +66,7 @@
                 </form>
                 <br> 
 
-                <label for="precisao">Precisão (nível de pormenor):</label>
+                <label for="precisao" id="kekw">Precisão (nível de pormenor):</label>
                 <select name="precisao" id="precisao">
                     <option value="muito">muito detalhado</option>
                     <option value="suficiente">grau de detalhe suficiente</option>
@@ -61,7 +74,7 @@
                 </select>
                 <br><br>
 
-                <label for="profundidade">Profundidade (nível de inter-relações do local):</label>
+                <label for="profundidade" id="kekw">Profundidade (nível de inter-relações do local):</label>
                 <br>
                 <form>
                     <input type="radio" id="muito" name="muito" value="muito">
@@ -72,18 +85,18 @@
                 <br> 
 
                 <form>
-                    <label for="amplitude">Amplitude (julgado através da subjetividade e prespetivas):</label>
+                    <label for="amplitude" id="kekw">Amplitude (julgado através da subjetividade e prespetivas):</label>
                     <input type="number" id="amplitude" name="amplitude" min="0" max="5" step="1">
                 </form>
                 <br>
 
                 <form>
-                    <label for="logica">Logica (nível de contradições e organização de tema):</label>
+                    <label for="logica" id="kekw">Logica (nível de contradições e organização de tema):</label>
                     <input type="number" id="logica" name="logica" min="0" max="100" step="10">
                 </form>
                 <br>
 
-                <label for="significancia">Significância (focado no importante, não trivial):</label>
+                <label for="significancia" id="kekw">Significância (focado no importante, não trivial):</label>
                 <select name="significancia" id="significancia">
                     <option value="objetivo">objetivo</option>
                     <option value="intermedio">intermédio</option>
@@ -91,7 +104,7 @@
                 </select>
                 <br><br>
 
-                <label for="originalidade">Originalidade (criativo e original):</label>
+                <label for="originalidade" id="kekw">Originalidade (criativo e original):</label>
                 <br>
                 <form>
                     <input type="radio" id="co" name="originalidade" value="co">
@@ -105,7 +118,7 @@
                 </form>
                 <br>
 
-                <label for="clubes">Assinale os atributos que classificam este website:</label>
+                <label for="clubes" id="kekw">Assinale os atributos que classificam este website:</label>
                 <br>
                 <form>
                     <input type="checkbox" id="inovador" name="inovador" value="inovador">
@@ -118,13 +131,13 @@
                     <label for="ofensivo"> Ofensivo/Impróprio</label><br><br>
                 </form>
 
-                <label for="locais">Sugestões de melhoria:</label>
+                <label for="locais" id="kekw">Sugestões de melhoria:</label>
                 <br>
                 <textarea id="locais" name="locais" rows="11" cols="100"></textarea>
                 <br><br>
 
                 <form>
-                    <label for="opiniao">Classificação global do site: (1 a 5)</label>
+                    <label for="opiniao" id="kekw">Classificação global do site: (1 a 5)</label>
                     <input type="number" id="opiniao" name="opiniao" min="1" max="5" step="1"><br><br>
                     <input type="hidden" id="custId" name="custId" value="1738">
                 </form>
@@ -132,8 +145,12 @@
                 <input type="submit">
             </fieldset>
         </form>
+    </section>
 
+
+    <section>
     <h4>Menu</h4>
+    <figure>
     <svg width="700" height="350">
         <image href="images/menu.PNG" width="100%" height="100%"></image>
         <a href="index.html">
@@ -172,7 +189,14 @@
             </rect>
         </a>      
     </svg>
+    <details>
+    <figcaption>wordcloud do menu</figcaption>
+    </details>
+    </figure>
+</section>
 
+<footer><p class="test">Tomás Neto a21903361 ULHT 2021</p></footer>
 
+        </main>
     </body>
 </html>
