@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="pt">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta charset="UTF-8">
+        <meta name="keywords" content="Faroe Islands">
+        <title>Tórshavn</title>
+        <link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico"/>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+        <link rel="stylesheet" href="estilos.css">
+    </head>
+    <body>
+        <div class="grid-container">
+            <div class="item1">
+            <header>
+        <h1>Tórshavn</h1>
+        <figure>
+        <a><img src="images/torshavn.PNG" alt="torshavn" style="width:300px;height:150px;"></a>
+        <details>
+        <figcaption id="custom">cidade de torshavn</figcaption>
+        </details>
+        </figure>
+            </header>
+        </div>
+            <br>
+
+            <div class="item2">
+                <nav>
+                    <div class="flex-container">
+                        <div>
+                <a href="index.html"><i class="material-icons">subdirectory_arrow_right</i>Introdução</a>
+                 <b> | </b> 
+                <a href="local.html"><i class="material-icons">subdirectory_arrow_right</i>Localizacao</a>
+                <b> | </b> 
+                <a href="multimedia.html"><i class="material-icons">subdirectory_arrow_right</i>Multimédia</a>
+                <b> | </b> 
+                <a href="info.html"><i class="material-icons">subdirectory_arrow_right</i>Informações</a>
+                    </div>
+                        <div>    
+                <a href="quizz.html"><i class="material-icons">subdirectory_arrow_right</i>Quizz</a>
+                <b> | </b> 
+                <b><a href="comentarios.html"><i class="material-icons">subdirectory_arrow_right</i>Comentários</a></b>
+                    </div>
+                        <div>
+                <a href="html5-css.html"><i class="material-icons">subdirectory_arrow_right</i>HTML5</a>
+                    </div>
+                        <div>
+                <a href="../index.html"><i class="material-icons">home</i>Localizacao Home (indice geral dos laboratórios)</a>
+                    </div>
+                </div>
+            </nav>
+        </div>
+
+<div class="item3">
+    <main>
+        <section>
+        <h3>Comentários</h3>
+        <form method="post" action="tomasneto2000@gmail.com">
+            <fieldset>
+                <legend>Opiniões</legend>
+                <br>
+                <form method="get">
+                    <label for="clareza" id="kekw">Clareza: (entre 0 e 100)</label>
+                    <input type="range" id="vol" name="cla" min="0" max="100" oninput="clareza.value = parseInt(cla.value)">
+                    <output name="clareza" for="cla">50</output>
+                </form>
+                <br><br>
+
+                <label for="rigor" id="kekw">Rigor (número de erros)</label>
+                <br>
+                <form>
+                    <input type="radio" id="muitos" name="rigor" value="muitos">
+                    <label for="muitos">Muitos</label><br>
+                    <input type="radio" id="suðuroy" name="rigor" value="alguns">
+                    <label for="alguns">Alguns</label><br>
+                    <input type="radio" id="streymoy" name="rigor" value="poucos">
+                    <label for="poucos">Poucos</label><br>
+                    <input type="radio" id="streymoy" name="rigor" value="nenhum">
+                    <label for="nenhum">Nenhum</label>
+                </form>
+                <br> 
+
+                <label for="precisao" id="kekw">Precisão (nível de pormenor):</label>
+                <select name="precisao" id="precisao">
+                    <option value="muito">muito detalhado</option>
+                    <option value="suficiente">grau de detalhe suficiente</option>
+                    <option value="pouco">pouco detalhado</option>
+                </select>
+                <br><br>
+
+                <label for="profundidade" id="kekw">Profundidade (nível de inter-relações do local):</label>
+                <br>
+                <form>
+                    <input type="radio" id="muito" name="muito" value="muito">
+                    <label for="muito">Muito</label><br>
+                    <input type="radio" id="pouco" name="pouco" value="pouco">
+                    <label for="pouco">Pouco</label><br>
+                </form>
+                <br> 
+
+                <form>
+                    <label for="amplitude" id="kekw">Amplitude (julgado através da subjetividade e prespetivas):</label>
+                    <input type="number" id="amplitude" name="amplitude" min="0" max="5" step="1">
+                </form>
+                <br>
+
+                <form>
+                    <label for="logica" id="kekw">Logica (nível de contradições e organização de tema):</label>
+                    <input type="number" id="logica" name="logica" min="0" max="100" step="10">
+                </form>
+                <br>
+
+                <label for="significancia" id="kekw">Significância (focado no importante, não trivial):</label>
+                <select name="significancia" id="significancia">
+                    <option value="objetivo">objetivo</option>
+                    <option value="intermedio">intermédio</option>
+                    <option value="redundante">redundante</option>
+                </select>
+                <br><br>
+
+                <label for="originalidade" id="kekw">Originalidade (criativo e original):</label>
+                <br>
+                <form>
+                    <input type="radio" id="co" name="originalidade" value="co">
+                    <label for="co">Criativo e original</label><br>
+                    <input type="radio" id="original" name="originalidade" value="original">
+                    <label for="original">Apenas original</label><br>
+                    <input type="radio" id="criativo" name="originalidade" value="criativo">
+                    <label for="criativo">Apenas criativo</label><br>
+                    <input type="radio" id="nenhum" name="originalidade" value="nenhum">
+                    <label for="nenhum">Nenhum dos dois</label>
+                </form>
+                <br>
+
+                <label for="clubes" id="kekw">Assinale os atributos que classificam este website:</label>
+                <br>
+                <form>
+                    <input type="checkbox" id="inovador" name="inovador" value="inovador">
+                    <label for="inovador"> Inovador</label><br>
+                    <input type="checkbox" id="aparencia" name="aparencia" value="aparencia">
+                    <label for="aparencia"> Boa aparência</label><br>
+                    <input type="checkbox" id="informativo" name="informativo" value="informativo">
+                    <label for="informativo"> Informativo</label><br>
+                    <input type="checkbox" id="ofensivo" name="ofensivo" value="ofensivo">
+                    <label for="ofensivo"> Ofensivo/Impróprio</label><br><br>
+                </form>
+
+                <label for="locais" id="kekw">Sugestões de melhoria:</label>
+                <br>
+                <textarea id="locais" name="locais" rows="11" cols="100"></textarea>
+                <br><br>
+
+                <form>
+                    <label for="opiniao" id="kekw">Classificação global do site: (1 a 5)</label>
+                    <input type="number" id="opiniao" name="opiniao" min="1" max="5" step="1"><br><br>
+                    <input type="hidden" id="custId" name="custId" value="1738">
+                </form>
+
+                <input type="submit">
+            </fieldset>
+        </form>
+    </section>
+
+
+    <section>
+    <h4>Menu</h4>
+    <figure>
+    <svg width="700" height="350">
+        <image href="images/menu.PNG" width="100%" height="100%"></image>
+        <a href="index.html">
+            <rect opacity="0.1" x="95" y="152" rx="10" ry="10" width="440" height="60">
+                <animate attributeName="x" values="50;150;50" dur="2s" repeatCount="indefinite" begin="0s"/>
+            </rect>
+        </a>
+        <a href="quizz.html">
+            <rect opacity="0.1" x="255" y="20" rx="10" ry="10" width="162" height="60">
+                <animate attributeName="x" values="235;255;235" dur="5s" repeatCount="indefinite" begin="0s"/>
+            </rect>
+        </a>
+        <a href="multimedia.html">
+            <rect opacity="0.1" x="99" y="90" rx="10" ry="10" width="345" height="55">
+            <animate attributeName="x" values="50;99;50" dur="5s" repeatCount="indefinite" begin="0s"/>
+            </rect>
+        </a>
+        <a href="../index.html">
+            <rect opacity="0.1" x="467" y="104" rx="10" ry="10" width="131" height="45">
+                <animate attributeName="x" values="460;467;460" dur="7s" repeatCount="indefinite" begin="0s"/>
+            </rect>
+        </a>
+        <a href="comentarios.html">
+            <rect opacity="0.1" x="90" y="215" rx="10" ry="10" width="175" height="25">
+                <animate attributeName="x" values="85;90;95" dur="7s" repeatCount="indefinite" begin="0s"/>
+            </rect>
+        </a>
+        <a href="local.html">
+            <rect opacity="0.1" x="167" y="243" rx="10" ry="10" width="365" height="47">
+                <animate attributeName="x" values="110;230;110" dur="3s" repeatCount="indefinite" begin="0s"/>
+            </rect>
+        </a>
+        <a href="info.html">
+            <rect opacity="0.1" x="185" y="297" rx="10" ry="10" width="250" height="38">
+                <animate attributeName="x" values="130;250;130" dur="3s" repeatCount="indefinite" begin="0s"/>
+            </rect>
+        </a>      
+    </svg>
+    <details>
+    <figcaption>wordcloud do menu</figcaption>
+    </details>
+    </figure>
+</section>
+
+</main>
+</div>   
+
+<div class="item4">
+    <aside><p>Tórshavn possui uma infraestrutura relativamente boa,
+     o que contribui para que o turismo seja crescente na cidade. 
+     A área da cidade possui vários sítios arqueológicos, além de prédios históricos, como a Câmara Nordic,
+     e concertos musicais e exposições culturais.</p></aside>
+    </div>
+
+<div class="item5">
+    <aside>
+        <img src="images/stadium_grande.PNG" alt="torshavn" style="width: 200px; height: 150px;">
+        <img src="images/glasir.PNG" alt="glasir" style="width: 200px; height: 150px;">
+        <img src="images/airport.PNG" alt="airport" style="width: 200px; height: 150px;">
+    </aside>
+    </div>
+
+<div class="item6">
+<footer><p class="test">Tomás Neto a21903361 ULHT 2021</p></footer>
+</div>
+    </body>
+</html>

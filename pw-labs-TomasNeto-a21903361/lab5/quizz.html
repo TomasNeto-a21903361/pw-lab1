@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="pt">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta charset="UTF-8">
+        <meta name="keywords" content="Faroe Islands">
+        <title>Tórshavn</title>
+        <link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico"/>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+        <link rel="stylesheet" href="estilos.css">
+    </head>
+    <body>
+        <div class="grid-container">
+        <div class="item1">
+        <header>
+        <h1>Tórshavn</h1>
+        <figure>
+        <a><img src="images/torshavn.PNG" alt="torshavn" style="width:300px;height:150px;"></a>
+        <details>
+        <figcaption id="custom">cidade de torshavn</figcaption>
+        </details>
+        </figure>
+            </header>
+        </div>
+            <br>
+        
+            <div class="item2">
+                <nav>
+                    <div class="flex-container">
+                        <div>
+                <a href="index.html"><i class="material-icons">subdirectory_arrow_right</i>Introdução</a>
+                 <b> | </b> 
+                <a href="local.html"><i class="material-icons">subdirectory_arrow_right</i>Localizacao</a>
+                <b> | </b> 
+                <a href="multimedia.html"><i class="material-icons">subdirectory_arrow_right</i>Multimédia</a>
+                <b> | </b> 
+                <a href="info.html"><i class="material-icons">subdirectory_arrow_right</i>Informações</a>
+                    </div>
+                        <div>    
+                <b><a href="quizz.html"><i class="material-icons">subdirectory_arrow_right</i>Quizz</a></b>
+                <b> | </b> 
+                <a href="comentarios.html"><i class="material-icons">subdirectory_arrow_right</i>Comentários</a>
+                    </div>
+                        <div>
+                <a href="html5-css.html"><i class="material-icons">subdirectory_arrow_right</i>HTML5</a>
+                    </div>
+                        <div>
+                <a href="../index.html"><i class="material-icons">home</i>Localizacao Home (indice geral dos laboratórios)</a>
+                    </div>
+                </div>
+            </nav>
+        </div>
+
+<div class="item3">
+        <main>
+        <section>
+        <h3>Quizz</h3>
+        <form method="post" action="tomasneto2000@gmail.com">
+            <fieldset>
+                <legend>Dados Pessoais</legend>
+                <p id="kekw">Nome: <input type="text" name="nome" placeholder="Nome" autofocus></p>
+                <p id="kekw">Apelido: <input type="text" name="apelido" placeholder="Apelido"></p>
+                <p id="kekw">Email: <input type="text" name="email" placeholder="Email" autocomplete="off" size="30" maxlength="50" required></p>
+            </fieldset>
+
+            <fieldset>
+                <legend>Quizz sobre Tórshavn</legend>
+                <br>
+                <label for="pais" id="kekw">Situa-se em que país? <input></label>
+                <br><br>
+
+                <label for="ilha" id="kekw">Em que ilha se situa?</label>
+                <br>
+                <form>
+                    <input type="radio" id="eysturoy" name="ilha" value="eysturoy">
+                    <label for="eysturoy">Eysturoy</label><br>
+                    <input type="radio" id="suðuroy" name="ilha" value="suðuroy">
+                    <label for="suðuroy">Suðuroy</label><br>
+                    <input type="radio" id="streymoy" name="ilha" value="streymoy">
+                    <label for="other">Streymoy</label>
+                </form>
+                <br><br> 
+
+                <label for="moeda" id="kekw">Qual é a moeda usada?</label>
+                <select name="moeda" id="moeda">
+                    <option value="euro">Euro</option>
+                    <option value="krone">Danish krone</option>
+                    <option value="dollar">Dollar</option>
+                    <option value="yen">Yen</option>
+                </select>
+                <br><br>
+
+                <label for="locais" id="kekw">Nomeie 2 sitios de interesse:</label>
+                <br>
+                <textarea id="locais" name="locais" rows="2" cols="50"></textarea>
+                <br><br>
+
+                <label for="clubes" id="kekw">Assinale os clubes da cidade:</label>
+                <br>
+                <form>
+                    <input type="checkbox" id="club1" name="club1" value="b36">
+                    <label for="vehicle1"> B36</label><br>
+                    <input type="checkbox" id="club2" name="club2" value="hb">
+                    <label for="vehicle2"> HB</label><br>
+                    <input type="checkbox" id="club3" name="club3" value="eb">
+                    <label for="vehicle3"> Eb/Streymur</label><br><br>
+                </form>
+                
+                <form>
+                    <label for="bandeira" id="kekw">Insira a imagem da bandeira do pais:</label>
+                    <input type="file" id="files" name="files" multiple>
+                    <br><br>
+                  </form>
+
+                <label for="idioma" id="kekw">Idioma falado:</label>
+                <br>
+                <form>
+                    <input list="linguas" name="lingua">
+                    <datalist id="linguas">
+                      <option value="Sueco">
+                      <option value="Islandês">
+                      <option value="Feroes">
+                      <option value="Finlandês">
+                      <option value="Gaélico">
+                    </datalist>
+                    <input type="submit">
+                </form>
+                <br> 
+
+                <form>
+                    <label for="data" id="kekw">Data de fundação:</label>
+                    <input type="date" id="data" name="data" min="2000-01-02"><br>
+                </form>    
+                <br>
+
+                <form>
+                    <label for="bandeira" id="kekw">Insira as cores da bandeira</label>
+                    <input type="color" id="favcolor" name="favcolor" value="#ff0000">
+                    <input type="color" id="favcolor" name="favcolor" value="#ff0000">
+                    <input type="color" id="favcolor" name="favcolor" value="#ff0000">
+                </form>
+                <br>
+
+                <form>
+                    <label for="area" id="kekw">Area da cidade: (entre 150 e 200)</label>
+                    <input type="number" id="area" name="area" min="150" max="200" step="1">
+                </form>
+                <br>
+                
+                <form method="get">
+                    <label for="populacao" id="kekw">População da cidade: (entre 10 mil e 15 mil)</label>
+                    <input type="range" id="vol" name="pop" min="10" max="15" oninput="populacao.value = parseInt(pop.value)">
+                    <output name="populacao" for="pop">13</output>
+                </form>
+                <br>
+
+                <input type="submit">
+            </fieldset>
+        </form>
+    </section>
+
+    <section>
+    <h4>Menu</h4>
+    <figure>
+    <svg width="700" height="350">
+        <image href="images/menu.PNG" width="100%" height="100%"></image>
+        <a href="index.html">
+            <rect opacity="0.1" x="95" y="152" rx="10" ry="10" width="440" height="60">
+                <animate attributeName="x" values="50;150;50" dur="2s" repeatCount="indefinite" begin="0s"/>
+            </rect>
+        </a>
+        <a href="quizz.html">
+            <rect opacity="0.1" x="255" y="20" rx="10" ry="10" width="162" height="60">
+                <animate attributeName="x" values="235;255;235" dur="5s" repeatCount="indefinite" begin="0s"/>
+            </rect>
+        </a>
+        <a href="multimedia.html">
+            <rect opacity="0.1" x="99" y="90" rx="10" ry="10" width="345" height="55">
+            <animate attributeName="x" values="50;99;50" dur="5s" repeatCount="indefinite" begin="0s"/>
+            </rect>
+        </a>
+        <a href="../index.html">
+            <rect opacity="0.1" x="467" y="104" rx="10" ry="10" width="131" height="45">
+                <animate attributeName="x" values="460;467;460" dur="7s" repeatCount="indefinite" begin="0s"/>
+            </rect>
+        </a>
+        <a href="comentarios.html">
+            <rect opacity="0.1" x="90" y="215" rx="10" ry="10" width="175" height="25">
+                <animate attributeName="x" values="85;90;95" dur="7s" repeatCount="indefinite" begin="0s"/>
+            </rect>
+        </a>
+        <a href="local.html">
+            <rect opacity="0.1" x="167" y="243" rx="10" ry="10" width="365" height="47">
+                <animate attributeName="x" values="110;230;110" dur="3s" repeatCount="indefinite" begin="0s"/>
+            </rect>
+        </a>
+        <a href="info.html">
+            <rect opacity="0.1" x="185" y="297" rx="10" ry="10" width="250" height="38">
+                <animate attributeName="x" values="130;250;130" dur="3s" repeatCount="indefinite" begin="0s"/>
+            </rect>
+        </a>      
+    </svg>
+    <details>
+    <figcaption>wordcloud do menu</figcaption>
+    </details>
+    </figure>
+</section>
+
+</main>
+</div>    
+
+<div class="item4">
+    <aside><p>Tórshavn possui uma infraestrutura relativamente boa,
+     o que contribui para que o turismo seja crescente na cidade. 
+     A área da cidade possui vários sítios arqueológicos, além de prédios históricos, como a Câmara Nordic,
+     e concertos musicais e exposições culturais.</p>
+    </aside>
+</div>
+
+<div class="item5"> 
+    <aside>
+        <img src="images/stadium_grande.PNG" alt="torshavn" style="width: 200px; height: 150px;">
+        <img src="images/glasir.PNG" alt="glasir" style="width: 200px; height: 150px;">
+        <img src="images/airport.PNG" alt="airport" style="width: 200px; height: 150px;">
+    </aside>
+</div>
+
+<div class="item6">
+    <footer><p class="test">Tomás Neto a21903361 ULHT 2021</p></footer>
+</div>
+    </body>
+</html>
